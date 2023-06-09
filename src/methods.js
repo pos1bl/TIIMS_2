@@ -37,7 +37,7 @@ const buildMathExpectationForGraph = (s, alpha, n) => {
 const buildStandardDeviation = (n, s, t) => {
   const χ1 = jStat.chisquare.inv(t / 2, 147);
   const χ2 = jStat.chisquare.inv(1 - t / 2, 147);
-  return `${Math.sqrt((n - 1) * s / χ1)} ≥ s ≥ ${Math.sqrt((n - 1) * s / χ2)}`;
+  return `${Math.sqrt((n - 1) * s / χ1)} ≥ σ ≥ ${Math.sqrt((n - 1) * s / χ2)}`;
 };
 
 const buildStandardDeviationForGraph = (n, s, t) => {

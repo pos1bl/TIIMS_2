@@ -19,13 +19,13 @@ const dependenceOfQuantityXForGraph = getDependenceOfQuantityXForGraph(xArray); 
 
 const arrayLengths = xArray.map(x => x.length);
 
-console.log(`Середньоквадратичне відхилення s: ${standardDeviationRange}\n`);
+console.log(`Середньоквадратичне відхилення σ: ${standardDeviationRange}\n`);
 console.log(`Математичне сподівання μ: ${mathExpectation}\n`);
 console.log(`Залежність оцінок μ від рівня довіри: ${dependenceOfLvl}\n`);
 drawGraph(aArray, dependenceOfLvlForGraph);
 console.log(`Залежність оцінок μ від обсягу вибірки: ${dependenceOfQuantity}\n`);
 drawGraph(arrayLengths, dependenceOfQuantityForGraph);
-console.log(`Залежність оцінок s від рівня довіри: ${dependenceOfLvlX}\n`);
+console.log(`Залежність оцінок σ від рівня довіри: ${dependenceOfLvlX}\n`);
 drawGraph(aArray, dependenceOfLvlXForGraph);
-console.log(`Залежність оцінок s від обсягу вибірки: ${dependenceOfQuantityX}\n`);
+console.log(`Залежність оцінок σ від обсягу вибірки: ${dependenceOfQuantityX}\n`);
 drawGraph(arrayLengths, dependenceOfQuantityXForGraph);
